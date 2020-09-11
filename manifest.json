@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Pill Manager",
+  "version": "1.0",
+  "description": "This extension fix sites bugs!",
+  "icons": {
+    "16": "images/pill16.png",
+    "32": "images/pill32.png",
+    "48": "images/pill48.png",
+    "128": "images/pill128.png"
+  },
+  "page_action": {
+    "default_icon": "images/pill32.png",
+    "default_popup": "popup.html",
+    "default_title": "Pill Manager"
+  },
+
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": false
+  },
+  "content_scripts": [{
+    "matches": ["https://www.youtube.com/*", "https://play.tavr.media/*"],
+    "js": ["js/content.js"]
+  }],
+  "permissions": ["tabs", "https://www.youtube.com/*", "https://play.tavr.media/*"]
+
+}

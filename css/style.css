@@ -1,0 +1,37 @@
+body {
+  min-width: 200px;
+  background-color: azure;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  height: 40px;
+  padding: 10px auto;
+  background-color: #0071E3;
+  box-shadow: 0 3px 7px 0 #0c58a3;
+}
+
+main {
+  margin-top: 5px;
+  min-height: 70px;
+  display: flex;
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(250, 249, 243);
+  margin-left: 10px;
+}
+
+p {
+  color: rgb(129, 33, 33);
+  margin-left: 10px;
+  font-size: 13px;
+}

@@ -1,0 +1,10 @@
+*.log*
+.directory
+
+.idea
+*.sublime*
+.vscode
+
+node_modules/
+build/
+.git
