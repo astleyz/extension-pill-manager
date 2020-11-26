@@ -48,6 +48,9 @@ class Youtube {
         this.controlList.addEventListener('focus', () => {
           this.controlList.style.outlineWidth = `0`
         })
+        this.controlList.addEventListener('click', () => {
+          this.controlList.style.outlineWidth = `0`
+        })
         this.controlList.focus(); 
         this.controlList.click();
       }
@@ -62,6 +65,24 @@ class Youtube {
   }
 }
 
+class Google {
+  constructor() {
+    this.addListener()
+  }
+
+  addListener() {
+    this.id = setInterval(() => this.init(), 10);
+  }
+  
+  init() {
+    let html = document.querySelector(`.QVCmK`)
+    if (html) {
+      html.style.overflow = `visible`
+      clearInterval(this.id)
+    }
+  }
+}
 
 if (location.hostname === `play.tavr.media`) new TavrMedia()
 if (location.hostname === `www.youtube.com`) new Youtube()
+if (location.hostname === `www.google.com`) new Google()

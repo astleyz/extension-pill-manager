@@ -20,9 +20,8 @@
     "persistent": false
   },
   "content_scripts": [{
-    "matches": ["https://www.youtube.com/*", "https://play.tavr.media/*"],
+    "matches": ["https://www.youtube.com/*", "https://play.tavr.media/*", "https://www.google.com/*"],
     "js": ["js/content.js"]
   }],
-  "permissions": ["tabs", "https://www.youtube.com/*", "https://play.tavr.media/*"]
-
+  "permissions": ["tabs"]
 }
